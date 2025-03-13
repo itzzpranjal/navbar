@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+         }
+
+        .navbar{
+            background-color:silver;
+            color:black;
+            padding: 15px;
+            text-align: center;
+            position:sticky;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+
+        }
+            
+         .product-card{
+            width: 400px;
+            height: 630px;
+            border: 1px solid black;
+            box-shadow: 0 0 10px rgba (0,0,0,0.5);
+            border-radius: 20px;
+            margin: 12px 20px;
+            
+            background-color: #CAE7Df;
+         }
+
+         .pimage{
+            height:330px ;
+            width:100%;
+            display: block ;
+            margin: 0 auto;
+            border-radius: 20px 20px 0px 0px;
+            }
+
+            .product-title{
+                text-align: center;
+            }
+
+            .product-discription{
+                text-align: justify;
+                padding: 0 10px;
+                font-size: 20px;
+            }
+
+            .product-btn{
+                display: block;
+                margin: 0 auto;
+                background-color: #85dec5;
+            
+                font-size: 20px;
+                border-radius: 50px;
+                padding: 5px 20px;
+            }
+
+            .Menu{
+                margin-left: 700px;
+            }
+
+            .Search{
+            margin-left: 100px;
+             }
+
+             .brand{
+                display: flex;
+                align-items: center;
+             }
+
+
+
+             .brand-logo{
+                height: 70px;
+
+             }
+
+             .item-menu{
+                color: black;
+                text-decoration: none;
+                font-size: 20px;
+                margin: 0 10px;
+             }
+
+             .item-menu:hover{
+                text-decoration: underline;
+             }
+
+             .box{
+                padding: 5px 10px;
+                border: none;
+                border-radius: 30px;
+             }
+
+             .menu-icon{
+                height: 40px;
+                display: none;
+             }
+
+
+             
+
+            /* Mobile */
+            @media(max-width: 600px){
+                .product-title{
+                    text-align: left;
+                    padding-left: 20px;
+                    font-size: 20px;
+                    font-size: 19px;
+                }
+
+                .product-card{
+                    width: 400px;
+                    height: 610px;
+                }
+
+                .product-btn{
+                    font-size: 17px;
+                    padding: 5px 20px;
+                }
+
+                .product-discription{
+                    font-size: 16px;
+                    padding: 0 20px;
+                }
+
+                .box{
+                    display: none;
+                }
+
+                .Menu{
+                    display: none;
+                }
+
+                .menu-icon{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: 50px;
+                }
+            }
+
+            /* Tablet */
+            @media(min-width: 601px) and (max-width: 1024px){
+    
+            .product-card{
+            width: 300px;
+            height: 630px;
+            }
+
+            .product-title{
+                font-size: 23px;
+            }
+
+            .product-discription{
+                font-size: 17px;
+            }
+
+            .product-btn{
+                font-size: 20px;
+            }
+
+            .box{
+                display: none;
+            }
+
+            .Menu{
+                margin: left 100px;
+            }
+            
+            }
+
+            /* Laptop */
+            @media(min-width: 801px) and (max-width: 1200px){
+            
+                
+                .box{
+                    display: none;
+                }
+
+                .Menu{
+                margin-left: 400px;
+            }
+            }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand">
+            <img src="https://img.freepik.com/premium-vector/dance-academy-logo-design_626969-258.jpg?w=2000" class="brand-logo" alt="Brand">
+            <h2>Indian Dance Styles</h2>
+        </div>
+        
+
+        <div class="Menu">
+            <a href="a" class="item-menu">Home</a>
+            <a href="a" class="item-menu">About</a>
+            <a href="a" class="item-menu">Contact</a>
+        </div>
+        <div class="Search">
+            <input type="text" placeholder="Search" class="box">
+        </div>
+    <img src="https://cdn-icons-png.flaticon.com/128/11410/11410813.png" class="menu-icon" alt="Menu Icon">
+
+    </div>
+    <div class="container">
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-vector/navratri-design_973842-93.jpg?ga=GA1.1.436318844.1736525716" class="pimage" alt="Garba">
+            <h1 class="product-title" >Garba</h1>
+            <p class="product-discription">Garba is a form of Gujarati dance which originates from the state of Gujarat, India. The name is derived from the Sanskrit term Garbha .Many traditional garbas are performed around a centrally lit lamp or a picture or statue of the Hindu goddess Durga.</p>
+            <button class="product-btn">Know More</button>
+        </div>
+    
+        <div class="product-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/023/315/116/large_2x/bengali-woman-doing-dhunuchi-dance-in-traditional-attire-on-white-background-vector.jpg" class="pimage" alt="Dhunuchi">
+            <h1 class="product-title" >Dhunuchi</h1>
+            <p class="product-discription">Dhunuchi Dance is a symbol of prosperity and positivity, where dancers balance burning incense bowls and sway to the Dhak drum. Learn about its history, significance, and how it is celebrated on Maha Navami, the last day of Durga Puja.</p>
+            <button class="product-btn">Know More</button>
+        </div>
+    
+        <div class="product-card">
+            <img src="https://img.freepik.com/free-vector/indian-woman-dancing_1196-451.jpg?ga=GA1.1.436318844.1736525716&semt=ais_hybrid" class="pimage" alt="Bharatanatyam">
+            <h1 class="product-title" >Bharatanatyam</h1>
+            <p class="product-discription">Bharatanātyam is an Indian classical dance form that originated in Tamil Nadu, India.It is a classical dance form recognized by the Sangeet Natak Akademi, and expresses South Indian religious themes and spiritual ideas of Hinduism and Jainism.</p>
+            <button class="product-btn">Know More</button>
+        </div>
+    
+        <div class="product-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/024/146/901/non_2x/cheerful-young-woman-performing-kuchipudi-dance-in-traditional-attire-vector.jpg" class="pimage" alt="Kuchipudi">
+            <h1 class="product-title" >Kuchipudi</h1>
+            <p class="product-discription">Kuchipudi is one of the eight major Indian classical dances. It originates from a village named Kuchipudi in the Indian state of Andhra Pradesh. Kuchipudi is a dance-drama performance, with its roots in the ancient Hindu Sanskrit text of Natya Shastra.</p>
+            <button class="product-btn">Know More</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/024/146/867/large_2x/young-woman-performing-lavani-classical-dance-of-maharashtra-in-traditional-dress-vector.jpg" class="pimage" alt="Lavani">
+            <h1 class="product-title" >Lavani</h1>
+            <p class="product-discription">Lavani is a genre of music popular in Maharashtra, India. Lavani is a combination of traditional song and dance, which particularly performed to the beats of Dholki, a percussion instrument. Lavani is noted for its powerful rhythm.</p>
+            <button class="product-btn">Know More</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://th.bing.com/th/id/OIP.vivtD0oPcau99OiqhgdbTgHaHa?pid=ImgDet&w=184&h=184&c=7&dpr=1.3" class="pimage" alt="Salasa">
+            <h1 class="product-title" >Salsa</h1>
+            <p class="product-discription">Salsa dance steps can be done individually, but salsa is most popularly known as a partnered dance where the lead takes the follower through a series of spins and turn patterns to music. Salsa's tempo ranges from about 150 bpm (beats per minute) to around 250 bpm.</p>
+            <button class="product-btn">Know More</button>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>
